@@ -1,0 +1,20 @@
+<button ng-click="$ctrl.changeLanguage('de')" translate="BUTTON_LANG_DE"></button>
+<button ng-click="$ctrl.changeLanguage('en')" translate="BUTTON_LANG_EN"></button>
+
+<h1 translate="SIGN_IN.PAGE_TITLE"></h1>
+
+<p translate="SIGN_IN.LAST_SESSION" translate-value-date="{{::$ctrl.translationData.date}}"></p>
+
+<div>
+  <label>{{'SIGN_IN.USERNAME_FIELD_LABEL' | translate}}</label>
+  <input translate-attr="{placeholder: 'SIGN_IN.USERNAME_FIELD_LABEL'}"/>
+  <br/><br/>
+  <label>{{'SIGN_IN.PASSWORD_FIELD_LABEL' | translate}}</label>
+  <input translate-attr="{placeholder: 'SIGN_IN.PASSWORD_FIELD_LABEL'}"/>
+</div>
+<br/>
+<button translate="SIGN_IN.FORGOT_PASSWORD"></button>
+<br/><br/>
+<hr/>
+<p> This example uses the angular-translate filter and directive to get the translations in the template.</p>
+<button ui-sref="home">Home</button>
